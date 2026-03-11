@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8c33b6 0%, #b16621 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-image {
+    display: block;
+    margin: 0 auto 20px;
+    width: 80px;
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.login-box h4{
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.form-group.checkbox label {
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #8c33b6 0%, #af49af 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(239, 15, 247, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #9045bb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #cf22df;
+    text-decoration: underline;
+}
