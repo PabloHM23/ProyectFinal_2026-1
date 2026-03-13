@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Dueño</title>
+    <link rel="stylesheet" href="../Styles/rgtowner.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-section">
+            <h1>Sistema Veterinario</h1>
+        </div>
+        <div class="user-info">
+            <span><button><a href=" ">Administrador</a> </button></span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Funciones</div>
+            <nav class="menu-list">
+                <a href="Assets/views/registerOwner.html" class="menu-item"><i class="fa-regular fa-user"></i><span>Registrar dueño</span></a>
+                <a href="Assets/views/managePersonnel.html" class="menu-item"><i class="fa-solid fa-users-gear"></i><span>Gestionar personal</span></a>
+                <a href="Assets/views/mngProviders.html" class="menu-item"><i class="fa-solid fa-box"></i><span>Gestionar proveedores</span></a>
+                <a href="Assets/views/mngMedications.html" class="menu-item"><i class="fa-solid fa-pills"></i><span>Gestionar medicamentos</span></a>
+                <a href="Assets/views/generateReport.html" class="menu-item"><i class="fa-regular fa-file-lines"></i><span>Generar reportes</span></a>
+                <a href="Assets/views/mngShifts.html" class="menu-item"><i class="fa-regular fa-clock"></i><span>Gestionar turnos</span></a>
+                <a href="Assets/views/registerPet.html" class="menu-item"><i class="fa-solid fa-paw"></i><span>Registrar mascota</span></a>
+                <a href="Assets/views/mngAppointments.html" class="menu-item"><i class="fa-regular fa-calendar-days"></i><span>Gestionar citas</span></a>
+                <a href="Assets/views/generateInvoice.html" class="menu-item"><i class="fa-solid fa-dollar-sign"></i><span>Generar factura</span></a>
+                <a href="Assets/views/registerPayment.html" class="menu-item"><i class="fa-regular fa-credit-card"></i><span>Registrar pago parcial</span></a>
+                <a href="Assets/views/viewHistory.html" class="menu-item"><i class="fa-solid fa-history"></i><span>Consultar historial</span></a>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            <h2>Registrar Dueño</h2>
+            <form class="register-form">
+                <label for="ownerName">Nombre completo:</label>
+                <input type="text" id="ownerName" name="ownerName" required>
+
+                <label for="ownerEmail">Correo electrónico:</label>
+                <input type="email" id="ownerEmail" name="ownerEmail" required>
+
+                <label for="reownerEmail">Confirmar correo electrónico:</label>
+                <input type="email" id="reownerEmail" name="reownerEmail" required>
+
+                <label for="ownerAddress">Dirección:</label>
+                <input type="text" id="ownerAddress" name="ownerAddress" required>
+
+                <label for="ownerPhone">Número de teléfono:</label>
+                <input type="tel" id="ownerPhone" name="ownerPhone" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </main>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Veterinaria. Todos los derechos reservados.</p>
+    </div>
+    
+</body>
+</html>
