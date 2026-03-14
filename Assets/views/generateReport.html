@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generar Reportes</title>
+    <link rel="stylesheet" href="../Styles/gntreport.css">
+    <link rel="shortcut icon" href="../Img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header class="navbar">
@@ -14,5 +16,56 @@
             <span><button><a href=" ">Administrador</a> </button></span>
         </div>
     </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Funciones</div>
+            <nav class="menu-list">
+                <a href="registerOwner.html" class="menu-item"><i class="fa-solid fa-users-gear"></i><span>Registrar dueño</span></a>
+                <a href="managePersonnel.html" class="menu-item"><i class="fa-solid fa-users-gear"></i><span>Gestionar personal</span></a>
+                <a href="mngProviders.html" class="menu-item"><i class="fa-solid fa-box"></i><span>Gestionar proveedores</span></a>
+                <a href="mngMedications.html" class="menu-item"><i class="fa-solid fa-pills"></i><span>Gestionar medicamentos</span></a>
+                <span class="menu-item-active"><i class="fa-regular fa-file-lines"></i><span>Generar reportes</span></span>
+                <a href="mngShifts.html" class="menu-item"><i class="fa-regular fa-clock"></i><span>Gestionar turnos</span></a>
+                <a href="registerPet.html" class="menu-item"><i class="fa-solid fa-paw"></i><span>Registrar mascota</span></a>
+                <a href="mngAppointments.html" class="menu-item"><i class="fa-regular fa-calendar-days"></i><span>Gestionar citas</span></a>
+                <a href="generateInvoice.html" class="menu-item"><i class="fa-solid fa-dollar-sign"></i><span>Generar factura</span></a>
+                <a href="registerPayment.html" class="menu-item"><i class="fa-regular fa-credit-card"></i><span>Registrar pago parcial</span></a>
+                <a href="viewHistory.html" class="menu-item"><i class="fa-solid fa-history"></i><span>Consultar historial</span></a>
+            </nav>
+        </aside>
+
+        <main class="content-area">
+            <h2>Generar Reportes</h2>
+
+            <a href="../views_extras/incomereport.html"><div class="report-container">
+                <div class="report-card blue">
+                    <h3>Reporte de Ingresos</h3>
+                    <p>Ingresos mensuales y anuales</p>
+                </div>
+            </a>
+                <a href="../views_extras/appointmentreport.html"><div class="report-card green">
+                    <h3>Reporte de Citas</h3>
+                    <p>Estadísticas de citas atendidas</p>
+                </div>
+            </a>
+
+            <a href="../views_extras/inventoryreport.html"><div class="report-card purple">
+                    <h3>Reporte de Inventario</h3>
+                    <p>Stock de medicamentos y productos</p>
+                </div>
+            </a>
+
+            <a href="../views_extras/petreport.html"><div class="report-card orange">
+                    <h3>Reporte de Mascotas</h3>
+                    <p>Mascotas registradas y atendidas</p>
+                </div>
+            </a>
+        </main>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 Veterinaria. Todos los derechos reservados.</p>  
+    </div>
 </body>
 </html>

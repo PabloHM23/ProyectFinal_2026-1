@@ -120,13 +120,51 @@ body{
     border-radius: 8px;
 }
 
+.register-form {
+    max-width: 800px; 
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .content-area {
     background: white;
     border-radius: 15px;
-    padding: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border-top: 5px solid #9c27b0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+    max-width: 900px;
 }
+
+.content-area h2 {
+    color: #9c27b0;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form button {
+    background: rgb(2, 190, 2);    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.register-form button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+
+

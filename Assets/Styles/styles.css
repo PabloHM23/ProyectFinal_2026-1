@@ -1,14 +1,12 @@
-/* General */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f3f4f6; /* Gris muy claro de fondo */
+    background-color: #f3f4f6;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Navbar */
 .navbar {
     background: linear-gradient(90deg, #8e44ad, #d81b60, #f39c12);
     color: white;
@@ -44,16 +42,14 @@ body {
     font-weight: bold;
 }
 
-/* Layout Principal */
 .main-container {
     display: grid;
-    grid-template-columns: 280px 1fr; /* Sidebar fija, contenido flexible */
+    grid-template-columns: 280px 1fr;
     gap: 20px;
     padding: 20px;
     flex: 1;
 }
 
-/* Sidebar */
 .sidebar {
     background: white;
     border-radius: 15px;
@@ -95,13 +91,12 @@ body {
     border-radius: 8px;
 }
 
-/* Área de Imagen (Derecha) */
 .content-area {
     background: white;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-top: 5px solid #9c27b0; /* Borde superior decorativo */
+    border-top: 5px solid #9c27b0; 
     display: flex;
     justify-content: center;
     align-items: center;
