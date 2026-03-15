@@ -121,7 +121,7 @@ body{
 }
 
 .register-form {
-    max-width: 800px; 
+    max-width: 1600px; 
     margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -134,7 +134,7 @@ body{
     display: block;
     font-family: 'Segoe UI', sans-serif;
     padding: 30px;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .content-area h2 {
@@ -144,6 +144,52 @@ body{
 }
 
 .register-form {
-    display: flex;
+    display: block;
     flex-direction: column;
+}
+
+.register-form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px; 
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.register-form input:focus {
+    border-color: #9c27b0;
+}
+
+.register-form input::placeholder {
+    color: #9ca3af;
+}
+
+.register-form button {
+    background: blue;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.register-form button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
 }

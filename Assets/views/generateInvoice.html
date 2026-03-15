@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generar Factura</title>
-    <link rel="stylesheet" href="../Styles/mngshift.css">
+    <link rel="stylesheet" href="../Styles/gntinvoice.css">
     <link rel="shortcut icon" href="../Img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -37,7 +37,25 @@
 
         <main class="content-area">
             <h2>Generar Factura</h2>
-            <!-- Contenido de la página de generación de factura -->
+            <form class="register-form">
+                <!-- Cambiar a un selector cuando ya haya datos -->
+                <label for="petName">Cliente:</label>
+                <input type="text" id="Name" name="Name" required>
+
+                <label for="petSpecies">Servicio:</label>
+                <input type="textArea" id="service" name="service" required>
+
+                <label for="petBreed">Subtotal:</label>
+                <input type="text" id="subtotal" name="subtotal" required>
+
+                <label for="petAge">IVA (16%):</label>
+                <input type="text" id="iva" name="iva" required>
+
+                <label for="ownerPhone">Total:</label>
+                <input type="text" id="totalpay" name="totalpay" required>
+
+                <button type="submit">Registrar</button>
+            </form>
         </main>
     </div>
 

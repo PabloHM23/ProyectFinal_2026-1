@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Mascota</title>
-    <link rel="stylesheet" href="../Styles/mngshift.css">
+    <link rel="stylesheet" href="../Styles/rgtpet.css">
     <link rel="shortcut icon" href="../Img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -38,7 +38,22 @@
         <main class="content-area">
             <h2>Registrar Mascota</h2>
             <form class="register-form">
-                <!-- Form fields for registering a pet -->
+                <label for="petName">Nombre de la mascota:</label>
+                <input type="text" id="petName" name="petName" required>
+
+                <label for="petSpecies">Especie:</label>
+                <input type="text" id="petSpecies" name="petSpecies" required>
+
+                <label for="petBreed">Raza:</label>
+                <input type="text" id="petBreed" name="petBreed" required>
+
+                <label for="petAge">Edad (años):</label>
+                <input type="text" id="petAge" name="petAge" required>
+
+                <label for="ownerPhone">Dueño:</label>
+                <input type="text" id="owner" name="owner" required>
+
+                <button type="submit">Registrar</button>
             </form>
         </main>
     </div>

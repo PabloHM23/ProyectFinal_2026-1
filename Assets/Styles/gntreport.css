@@ -128,6 +128,8 @@ body{
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border-top: 5px solid #9c27b0;
     display: block;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 100%;
 }
 
 .content-area h2 {

@@ -134,7 +134,7 @@ body{
     display: block;
     font-family: 'Segoe UI', sans-serif;
     padding: 30px;
-    max-width: 900px;
+    max-width: 100%;
 }
 
 .content-area h2 {
@@ -144,8 +144,9 @@ body{
 }
 
 .register-form {
-    display: flex;
-    flex-direction: column;
+    max-width: 1600px; 
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .register-form button {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Pago</title>
-    <link rel="stylesheet" href="../Styles/mngshift.css">
+    <link rel="stylesheet" href="../Styles/rgtpay.css">
     <link rel="shortcut icon" href="../Img/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -37,7 +37,20 @@
         <main class="content-area">
             <h2>Registrar Pago Parcial</h2>
             <form class="register-form">
-                <!-- Form fields for registering a partial payment -->
+                <!-- Cambiar a u selector cuando ya haya datos -->
+                <label for="invoiceNumber">Factura:</label>
+                <input type="text" id="invoiceNumber" name="invoiceNumber" required>
+
+                <label for="paymentAmount">Monto Pendiente:</label>
+                <input type="text" id="paymentAmount" name="paymentAmount" required>
+
+                <label for="paymentDate">Monto de Pago:</label>
+                <input type="text" id="paymentDate" name="paymentDate" required>
+
+                <label for="paymentMethod">Método de Pago:</label>
+                <input type="text" id="paymentMethod" name="paymentMethod" required>
+
+                <button type="submit">Registrar Pago</button>
             </form>
         </main>
     </div>
