@@ -167,5 +167,99 @@ body{
     transform: translateY(-1px);
 }
 
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
+.custom-table thead {
+    background-color: #f8f9fa;
+}
+
+.custom-table th {
+    text-align: left;
+    padding: 12px 15px;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.custom-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Estilo del Badge "Activo" */
+.status-active {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* Acciones (Editar/Eliminar) */
+.btn-edit { color: #7986cb; text-decoration: none; margin-right: 10px; cursor: pointer; }
+.btn-delete { color: #e57373; text-decoration: none; cursor: pointer; }
+
+/* El contenedor del modal (oculto por defecto) */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Fondo oscuro transparente */
+    backdrop-filter: blur(4px); /* Desenfoque de fondo moderno */
+}
+
+/* Caja del formulario */
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 12px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Botón de cerrar (X) */
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-btn:hover { color: #333; }
+
+/* Botón principal de la página */
+.btn-add-main {
+    background: #9c27b0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
 
